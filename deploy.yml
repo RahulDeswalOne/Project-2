@@ -3,19 +3,19 @@ kind: Deployment
 metadata:
   name: project-deployment
   labels:
-    app: website
+    app: webiste
 spec:
   replicas: 4
   selector:
-    matchlabels:
-      app: website
+    matchLabels:
+      app: webiste
   template:
     metadata:
       labels:
-        app: website
+        app: webiste
     spec:
       containers:
-      - name: website
-        image: rahuldeswalone/websiteimage
-        port:
-          containerPort: 80
+      - name: webiste
+        image: rahuldeswalone/webisteimage
+        ports:
+        - containerPort: 80
