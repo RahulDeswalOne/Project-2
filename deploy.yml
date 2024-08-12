@@ -7,7 +7,7 @@ metadata:
 spec:
   replicas: 4
   selector:
-    matchLabels:
+    matchlabels:
       app: website
   template:
     metadata:
@@ -17,5 +17,5 @@ spec:
       containers:
       - name: website
         image: rahuldeswalone/websiteimage
-        ports:
-        - containerPort: 80
+        port:
+          containerPort: 80
